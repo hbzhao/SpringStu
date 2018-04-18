@@ -1,4 +1,4 @@
-package com.albert.OD;
+package SpringStu.com.albert.OD;
 
 public class Car {
     private String brand;

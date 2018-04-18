@@ -1,6 +1,6 @@
-package com.albert.beanfactory;
+package SpringStu.com.albert.beanfactory;
 
-import com.albert.OD.Car;
+import SpringStu.com.albert.OD.Car;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.core.io.Resource;
@@ -11,7 +11,7 @@ public class BeanFactoryTest {
 
     public static void main(String[] args) throws Throwable{
         ResourcePatternResolver resolver=new PathMatchingResourcePatternResolver();
-        Resource res=resolver.getResource("classpath:beans.xml");
+        Resource res=resolver.getResource("classpath:SpringStu/beans.xml");
         System.out.println(res.getURL());
 
 

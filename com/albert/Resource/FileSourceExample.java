@@ -1,4 +1,4 @@
-package com.albert.Resource;
+package SpringStu.com.albert.Resource;
 
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.PathResource;
@@ -13,7 +13,7 @@ import java.io.OutputStream;
 public class FileSourceExample {
     public static void main(String[] args){
         try{
-            String filePath="/home/hongbo/file1.txt";
+            String filePath="G:\\JetbrainsPrj\\Intellij\\untitled\\src\\file1.txt";
             WritableResource res1=new PathResource(filePath);
             OutputStream stream1=res1.getOutputStream();
             stream1.write("this is my first try".getBytes());
