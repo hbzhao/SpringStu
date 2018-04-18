@@ -9,6 +9,7 @@ public class Car implements BeanFactoryAware,BeanNameAware,InitializingBean,Disp
     }
 
     public void setBrand(String brand) {
+        System.out.println("set brand");
         this.brand = brand;
     }
 

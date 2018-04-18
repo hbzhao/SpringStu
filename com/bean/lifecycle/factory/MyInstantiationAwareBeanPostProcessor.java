@@ -16,12 +16,11 @@ public class MyInstantiationAwareBeanPostProcessor extends InstantiationAwareBea
     }
 
     @Override
-    public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+    public boolean postProcessAfterInstantiation(Object bean, String beanName) throws BeansException {
         if("car".equals(beanName)){
             System.out.println("InstantiationAware BeanPostProcessor process after intantiation");
         }
-        System.out.println("fffff");
-        return bean;
+        return true;
     }
 
     @Override

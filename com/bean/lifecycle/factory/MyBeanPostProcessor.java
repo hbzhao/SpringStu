@@ -9,7 +9,7 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
     public Object postProcessBeforeInitialization(Object o, String s) throws BeansException {
         if(s.equals("car")){
             Car car= (Car) o;
-            if(car.getColor()==null){
+            if(car.getColor()!=null){
                 System.out.println("use BeanPostProcessor.postProcessBeforeInitialization set color to black");
             }
         }
