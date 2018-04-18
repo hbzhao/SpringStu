@@ -10,4 +10,20 @@
           p:maxSpeed="200"
     />
 
+    <bean id="car" class="SpringStu.com.bean.lifecycle.od.Car"
+          init-method="myInit"
+          destroy-method="myDestroy"
+          p:brand="bmw"
+          p:color="write"
+          p:maxSpeed="210"
+          />
+
+    <bean id="car2" class="SpringStu.com.bean.lifecycle.od.Car"
+          init-method="myInit"
+          destroy-method="myDestroy"
+          p:brand="bbb"
+          p:color="tttt"
+          p:maxSpeed="210"
+    />
+
 </beans>
